@@ -8,6 +8,8 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" href="images/selfish.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -47,6 +49,7 @@
         <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr style="padding:0px">
                 <td style="padding:20px;width:45%;vertical-align:middle">
                   <heading>Experience</heading>
                   <div class="one">
@@ -64,11 +67,17 @@
                   May. 2021 - Jun. 2022
                   <br>
                   <p></p>
-                  <p>Researching and developing tools for Blizzard Cinematics.</p>
+
+                  <details>
+                    <summary>Worked on real-time and offline C++ framework for cloud rendering.</summary>
+                    For offline rendering, I developed and deployed several sever-side stickers under the framework of offline cloud rendering.
+                    <br>
+                    For real-time rendering, I developed the cloud rendering SDK and applied to webRTC and metahuman (both in progress). 
+                  </details>
                 </td>
               </tr>
 
-              <tr onmouseout="adobe_stop()" onmouseover="adobe_start()">
+              <tr style="padding:0px">
                 <td style="padding:20px;width:45%;vertical-align:middle">
                   <!-- <a href="https://research.adobe.com/"> -->
                   <div class="one">
@@ -78,16 +87,6 @@
                     <img src='images/bytedance_Logo.jpg' width="320" height="160">
                   </div>
                   <!-- </a> -->
-                  <script type="text/javascript">
-                    function adobe_start() {
-                      document.getElementById('adobe_image').style.opacity = "1";
-                    }
-
-                    function adobe_stop() {
-                      document.getElementById('adobe_image').style.opacity = "0";
-                    }
-                    adobe_stop()
-                  </script>
                 </td>
                 <td style="padding:20px;width:55%;vertical-align:middle">
                   <papertitle><a href="https://fanqienovel.com/">Fanqie Novel</a> | Big Data Engineer
@@ -97,14 +96,29 @@
                   <br>
                   <p></p>
                   <p>
-                  <details>
-                    <summary>Worked on interactive photo-realistic rendering.</summary>For my 2021 summer
-                    internship at Adobe Research, I improved the rendering capabilities of a geometry
-                    processing library, <a href="https://github.com/adobe/lagrange"><em>Lagrange</em></a>, by
-                    integrating a path tracer into its UI module, in which researchers
-                    prototype their ideas and
-                    algorithms.
-                  </details>
+                    Constructed data pipeline of Fanqie Novel with Spark and Python and performed ETL
+                    process on more than hundreds of billions of tracking event data daily.
+                  </p>
+                </td>
+              </tr>
+
+              <tr style="padding:0px">
+                <td style="padding:20px;width:45%;vertical-align:middle">
+                  <!-- <a href="https://research.adobe.com/"> -->
+                  <div class="one">
+                    <img src='images/hundsun_logo.png' width="320" height="160">
+                  </div>
+                  <!-- </a> -->
+                </td>
+                <td style="padding:20px;width:55%;vertical-align:middle">
+                  <papertitle><a href="https://en.hundsun.com/">Hundsun Technologies Inc.</a> | Software Engineer
+                  </papertitle>
+                  <br>
+                  July. 2019 - Aug.2019
+                  <br>
+                  <p></p>
+                  <p>
+                    Developed windows client with PyQt to make convenient data comparisons between different data tables and provide visualization.
                   </p>
                 </td>
               </tr>
@@ -124,7 +138,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
       
-          <tr onmouseout="dreamfusion_start()" onmouseover="dreamfusion_start()"  bgcolor="#ffffd0">
+          
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='dreamfusion_image'><video  width=100% height=100% muted autoplay loop>
@@ -133,40 +147,21 @@
                 </video></div>
    
               </div>
-              <script type="text/javascript">
-                function dreamfusion_start() {
-                  document.getElementById('dreamfusion_image').style.opacity = "1";
-                }
-
-                function dreamfusion_stop() {
-                  document.getElementById('dreamfusion_image').style.opacity = "0";
-                }
-                dreamfusion_start()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dreamfusion3d.github.io/">
-                <papertitle>DreamFusion: Text-to-3D using 2D Diffusion</papertitle>
-              </a>
-              <br>
-              <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>,
-              <a href="https://www.ajayj.com/">Ajay Jain</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>
-              <br>
-              <em>ICLR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://dreamfusion3d.github.io/">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2209.14988">arXiv</a>
-              /
-              <a href="https://dreamfusion3d.github.io/gallery.html">gallery</a>
-              <p></p>
-              <p>
-              We optimize a NeRF from scratch using a pretrained text-to-image diffusion model to do text-to-3D generative modeling.
-              </p>
-            </td>
-          </tr>
+              
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Camera Shake & Camera Bounce & Particles Dissipate</papertitle>
+            <br>
+            Dec. 2021 - Jun. 2022
+            <br>
+            <p></p>
+            <p>
+            Applied depth estimation algorithm to Camera Shake and Camera Bounce, and VFX effect to Particles Dissipate. 
+            Deployed stickers as backend services and maintained stability. 
+            Camera Shake was rated S level among users from Pakistan and Bengal on TikTok and peak QPS of service reached 80. 
+            </p>
+          </td>
+   
 
           <tr onmouseout="shadertoy_stop()" onmouseover="shadertoy_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -188,10 +183,20 @@
                 shadertoy_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dreamfusion3d.github.io/">
-                <papertitle>DreamFusion: Text-to-3D using 2D Diffusion</papertitle>
-              </a>
+            <td style="padding:20px;width:75%;vertical-align:middle">         
+                <papertitle>Crazy Universe: Real-Time 3-D Graphics Rendering</papertitle>
+                <br>
+                Dec. 2021 - Jun. 2022
+                <br>
+                <i class="fa fa-github"></i>
+                <a href="https://www.shadertoy.com/view/XlccRB">code</a>
+                /
+                <i class="fa fa-life-bouy"></i>
+                <a href="https://www.shadertoy.com/view/XlccRB">shadertoy</a>
+                <p></p>
+                <p>
+                    Created a Disco-ball effects with starry sky box. Used ray tracing, bump mapping and 2D-3D transformation to create this fancy effect with reflection, shadow and realistic material.
+                </p>
             </td>
           </tr>
 		  
@@ -203,23 +208,22 @@
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://openreview.net/forum?id=AmPeAFzU3a4">
-              <papertitle>MIRA: Mental Imagery for Robotic Affordances</papertitle>
+              <papertitle>Teapot Ray Tracing with BSP Tree</papertitle>
             </a>
             <br>
-            <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
-            <a href="http://www.peteflorence.com/">Pete Florence</a>, 
-            <a href="https://andyzeng.github.io/">Andy Zeng</a>, <strong>Jonathan T. Barron</strong>, 
-            <a href="https://yilundu.github.io/">Yilun Du</a>,
-            <a href="https://people.csail.mit.edu/weichium/">Wei-Chiu Ma</a>,
-            <a href="https://anthonysimeonov.github.io/">Anthony Simeonov</a>,
-            <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
-            <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
+            Oct. 2022 - Nov. 2022
             <br>
-            <em>CoRL</em>, 2022
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/Wan-woo/CSCI580">code</a>
+            /
+            <i class="fa fa-file-pdf-o"></i>
+            <a href="data/TeapotRayTracingWithBSPTreeFinal.docx.pdf">report</a>
+            
             <p></p>
             <p>
-              NeRF lets us synthesize novel orthographic views that work well with pixel-wise algorithms for robotic manipulation.
+              We tested the most famous 3D model in graphics - teapot with ray-tracing method to create shadow, reflection and refraction effects.
+              More than that, we constructed BSP Tree for given scene and implemented voxel walking algorithm to find the nearest primitive.
+              Decreased running time from 2400+ms of brute-force method to less than 50ms by using this linear time algorithm.
             </p>
           </td>
 
@@ -257,9 +261,16 @@
             </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://dreamfusion3d.github.io/">
-              <papertitle>DreamFusion: Text-to-3D using 2D Diffusion</papertitle>
-            </a>
+              <papertitle>Gewu Xinan(<i>格物新安</i>) : AR calendar application</papertitle>
+              <br>
+              <i class="fa fa-youtube-play"></i>
+              <a href="images/ar.mp4">video</a>
+            <p></p>
+            <p>
+              This app is designed to show cultural relics and historic sites in Anhui and users can simply scan our designed calendar to interact with twelve models.
+              Used 3D max to create the models and rig several assets to create skeleton animation.
+            </p>
+
           </td>
         </tr>
       
@@ -282,9 +293,31 @@
             </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://dreamfusion3d.github.io/">
-              <papertitle>DreamFusion: Text-to-3D using 2D Diffusion</papertitle>
+            <a href="https://dl.acm.org/doi/10.1145/3491101.3519725">
+              <papertitle>Who Will Support My Project? Interactive Search of Potential Crowdfunding Investors Through inSearch.
+              </papertitle>
             </a>
+            <br>
+            Songheng Zhang, Yong Wang, Haotian Li, <b>Wanyu Zhang</b>
+            <br>
+            CHI Conference on Human Factors in Computing Systems Extended Abstracts
+            <br>
+            <i class="fa fa-file-pdf-o"></i>
+            <a href="data/22-CHI22-LBW-iSearch.pdf">paper</a>
+            /
+            <i class="fa fa-youtube-play"></i>
+            <a
+              href="https://www.youtube.com/watch?v=NlX1M2w6Wu8">video</a>
+            /
+            <i class="fa fa-database"></i>
+            <a
+              href="https://www.kickstarter.com/">data</a>
+            <p></p>
+            <p>
+              We developed this visual analytic system - inSearch, which allows
+              founders to search for investors interactively on crowdfunding platforms like kickstarter etc. in a more effective way.
+            </p>
+
           </td>
         </tr>
 
@@ -295,63 +328,22 @@
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
             <a href="https://dreamfusion3d.github.io/">
-              <papertitle>DreamFusion: Text-to-3D using 2D Diffusion</papertitle>
+              <papertitle>Visualization on Intelligent Venue</papertitle>
             </a>
+            <br>
+            May. 2019 - Jun. 2019
+            <br>
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/Wan-woo/ChinaVis2019">code</a>
+            <p></p>
+            <p>
+                This project is my first visual analytics application to design a monitor system using streaming data from a venue.
+                Received excellent prize in ChinaVis2019 Data Visual Analytics Challenge.
+            </p>
           </td>
         </tr>
       
       </tbody></table>
-
-				
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Misc</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-					
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-            <td width="75%" valign="center">
-              <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-              <br>
-              <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>
-              <br>
-              <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-              <br>
-              <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/cs188.jpg" alt="cs188">
-            </td>
-            <td width="75%" valign="center">
-              <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-              <br>
-              <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-              <br>
-              <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-            </td>
-          </tr>
-					
-
-          <tr>
-            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-							<heading>Basically <br> Blog Posts</heading>
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-              <br>
-              <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-              <br>
-              <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-            </td>
-          </tr>
-					
-					
       </td>
     </tr>
   </table>
