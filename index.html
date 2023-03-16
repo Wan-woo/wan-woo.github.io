@@ -276,7 +276,45 @@
           </td>
         </tr>
       
-      </tbody></table>
+      <tr onmouseout="motion_stop()" onmouseover="motion_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='motion_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/motion.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video></div>
+            <img src="images/motion.jpg" width=320px height=160px>
+          </div>
+          <script type="text/javascript">
+            function motion_start() {
+              document.getElementById('motion_image').style.opacity = "1";
+            }
+
+            function motion_stop() {
+              document.getElementById('motion_image').style.opacity = "0";
+            }
+            motion_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Motion Capture Interpolation</papertitle>
+            <br>
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/wanyuzha/MotionCapture">code</a>
+            <i class="fa fa-file-pdf-o"></i>
+            <a href="data/CSCI_520_Motion_Capture.pdf">paper</a>
+            <br>
+             The project implemented two different interpolation methods (Linear vs. Bezier) under two different 
+             angles (Euler vs. quaternion). Report shows more details on the performance of different combinations. 
+          <p></p>
+          <p>
+            
+          </p>
+
+        </td>
+      </tr>
+    
+    </tbody></table>
 
 
       <!--AR-->
@@ -323,8 +361,8 @@
 
           </td>
         </tr>
-      
       </tbody></table>
+
 
       <!--Visualization-->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
